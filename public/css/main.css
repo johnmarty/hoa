@@ -1,0 +1,58 @@
+body {
+	font-family: "Gill Sans", Helvetica, Arial;
+	margin: 8px;
+}
+
+body .container {
+	width: 100%;
+}
+
+#nav ul li {
+	float: left;
+	list-style-type: none;
+	padding-right: 4px;
+}
+
+.two-column {
+	width: 50%;
+	float: left;
+}
+
+.percent30-column {
+	width: 30%;
+	float: left;
+}
+
+.percent70-column {
+	width: 70%;
+	float: left;
+}
+
+.table td ol {
+	margin-left: 18px;
+}
+
+.table th {
+	text-align: right;
+	width: 225px;
+}
+
+a i {
+	margin-right: 4px;
+}
+
+.page .menu {
+	margin-bottom: 6px;
+}
+
+.page form .edit {
+	display: none;
+}
+
+.page .editing form .view {
+	display: none;
+}
+
+.page .editing form .edit {
+	display: inline-block;
+}

@@ -1,0 +1,14 @@
+<% include header.ejs %>
+
+    <%- include guest-newsletter.ejs %>
+    <%- include guest-contact.ejs %>
+    <%- include guest-calendar.ejs %>
+    <%- include newsletter.ejs %>
+    <%- include contact.ejs %>
+    <%- include calendar.ejs %>
+    <script>
+        username = "<%-username%>";
+    </script>
+    <script data-main="/public/js/main" src="/public/library/requirejs/require.js"></script>
+    
+<% include footer.ejs %>

@@ -1,0 +1,33 @@
+<% include header.ejs %>
+
+		<div class="page">  
+			<h2>User login</h2>
+			<div id="user-login-container">
+				<span class="text-error"><%= error%></span> 
+				<form action="/login" accept-charset="UTF-8" method="post" id="user-login-form" class="form-horizontal">
+					<input type="text" maxlength="60" name="username" class="input-small" placeholder="Username" value="<%=username%>">
+  					<input type="password" maxlength="60" name="password" class="input-small" placeholder="Password">
+  					<!-- 
+					<label class="checkbox">
+					    <input type="checkbox"> Remember me
+					</label>
+  					-->
+					<input type="submit" class="btn btn-primary" name="op" id="submit" value="Sign in">
+				</form>
+
+				<div class="item-list">
+					<ul>
+						<li class="first">
+							<a href="/register" title="Create a new user account.">Create new account</a>
+						</li>
+						<!--
+						<li class="last">
+							<a href="/request-new-password" title="Request new password via e-mail.">Request new password</a>
+						</li>
+						-->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+<% include footer.ejs %>

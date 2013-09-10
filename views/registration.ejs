@@ -1,0 +1,32 @@
+<% include header.ejs %>
+<form action="/register" accept-charset="UTF-8" method="post">
+   <legend>Account information</legend>
+   <div class="form-item" id="name-wrapper">
+      <p class="description"> The content of this field is kept private and will not be shown publicly.</p>
+      <label for="username">Username:</label>
+      <input required type="text" maxlength="60" name="username" id="name" size="60" value="" class="form-text required" placeholder="Username">
+      <p>Spaces are allowed; punctuation is not allowed except for periods, hyphens, and underscores.</p>
+   </div>
+   <div class="form-item" id="password-wrapper">
+      <label for="password">Password:</label>
+      <input required type="password" maxlength="64" name="password" id="password" size="60" value="" class="form-text required" placeholder="Password">
+      <div class="description">...</div>
+   </div>
+   <div class="form-item" id="mail-wrapper">
+      <label for="mail">E-mail address:</label>
+      <input required type="text" maxlength="64" name="mail" id="mail" size="60" value="" class="form-text required" placeholder="Email">
+      <div class="description">A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</div>
+   </div>
+   <div class="form-item" id="firstname-wrapper">
+      <label for="mail">First name: </label>
+      <input required type="text" maxlength="64" name="firstname" id="firstname" size="60" value="" class="form-text required" placeholder="First Name">
+   </div>
+   <div class="form-item" id="lastname-wrapper">
+      <label for="mail">Last name: </label>
+      <input required type="text" maxlength="64" name="lastname" id="lastname" size="60" value="" class="form-text required" placeholder="Last Name">
+   </div>
+
+   <input type="submit" class="btn btn-primary btn-small" name="op" id="submit" value="Create new account">
+   <a href="/#/login" class="btn btn-warning btn-small" name="cancel" id="cancel" class="form-cancel">Cancel</a>
+</form>
+<% include footer.ejs %>
